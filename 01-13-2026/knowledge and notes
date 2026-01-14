@@ -1,0 +1,50 @@
+### 1️ Functions with Parameters
+- Domain and range
+- Monotonicity and extremum
+- Parameter analysis
+
+**Techniques**:
+1. Classification based on parameter values
+2. Complete square method:
+   f(x) = x^2 - 4kx + 3k^2 = (x-2k)^2 - k^2
+3. Extremum:
+f'(x) = 0 => x_extremum
+4. Discriminant for zero points:
+Δ = b^2 - 4ac
+
+### 2️ Inequalities and Extremum
+**Core Inequalities**:
+- AM-GM: `(a+b)/2 >= sqrt(ab)`
+- Cauchy-Schwarz: `(sum a_i*b_i)^2 <= (sum a_i^2)*(sum b_i^2)`
+- Chebyshev inequality
+
+**Techniques**:
+1. Find extremum points first, then analyze parameter range
+2. Use monotonicity or recursion to analyze sequences
+3. Combine combinatorial arguments with inequalities for maximum/minimum problems
+
+### 3️ Sequences and Recursion
+**Arithmetic / Geometric sequences**:
+a_n = a_1 + (n-1)d
+a_n = a_1 * r^(n-1)
+**Nonlinear recursion**:
+a_(n+1) = a_n + 1/a_n
+**Techniques**:
+- Difference method: `Δ a_n = a_(n+1) - a_n`
+- Induction for proving inequalities or sequence properties
+
+### 4️ Combinatorics / Permutations / Inclusion-Exclusion
+**Formulas**:
+C(n,k) = n! / (k!(n-k)!), P(n,k) = n! / (n-k)!
+**Inclusion-Exclusion Principle**:
+|A ∪ B| = |A| + |B| - |A ∩ B|
+**Techniques**:
+1. Block method for "no two adjacent elements" problems
+2. Conditional permutations: total minus forbidden cases
+3. Recursive counting:
+f(n) = f(n-1) + f(n-2)
+
+### 5️ Advanced Integration Techniques
+- Function + inequality + combinatorics problems
+- Parameter analysis combined with extremum
+- Always cover all cases to avoid missing solutions
