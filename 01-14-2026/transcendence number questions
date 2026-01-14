@@ -1,0 +1,16 @@
+### Question
+ for x=e^root2+e^-root2, prove x is a transcendental number.
+
+### First thought
+because root 2 and -root2 is algebraic->
+so e^-root2 and e^root2 are transcendence number. 
+if x is algebraic, then e^- root2 + e^ root2 must both be algebraic.
+this is contradiction to the conclusion, so x is transcendental​
+
+### Advanced solution
+noticed that e^root2 + e^ -root 2  is common kind of u+1/u.
+so make a function, let u=e^root2, x=u+1/u, u^2-ux+1=0.
+for this function, x seems to be algebraic（because of defenition）
+but if x is algebraical, then u must be algebraical, so e^root2 is algebraical.
+using the lemma:e^a(a don't equal to 0 and is algebraical),root 2 is a algebraic number so e^root 2 is an transcendence number
+this conclusion is contradictory with x is an algebraic number, so x must be a transcendence number.
