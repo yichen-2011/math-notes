@@ -1,0 +1,98 @@
+## Algebraic Dependence and Polynomial Construction
+
+This section summarizes a core competition technique:
+constructing polynomial equations to determine whether a number
+can be algebraic or must be transcendental.
+
+### 1️ Core Principle
+
+A number is algebraic if and only if it is a root of a non-zero
+polynomial with integer coefficients.
+
+Therefore, to test algebraicity, the key question is:
+Can we construct a polynomial equation satisfied by the number?
+
+### 2️ Basic Structure: u + 1/u
+
+Let:
+u ≠ 0  
+x = u + 1/u
+
+Multiply both sides by u:
+xu = u^2 + 1
+
+Rearrange:
+u^2 - x u + 1 = 0
+
+Conclusion:
+If x is algebraic, then u is algebraic,
+since algebraic numbers are closed under solving polynomial equations.
+
+### 3️ Higher Powers: u^n + 1/u^n
+
+Starting from:
+x = u + 1/u
+
+Square:
+x^2 = u^2 + 2 + 1/u^2
+
+So:
+u^2 + 1/u^2 = x^2 - 2
+
+Cube:
+(u + 1/u)^3 = u^3 + 3u + 3/u + 1/u^3
+
+Thus:
+u^3 + 1/u^3 = x^3 - 3x
+
+General Result:
+For all integers n ≥ 1,
+u^n + 1/u^n can be expressed as a polynomial P_n(x)
+with integer coefficients.
+
+This shows algebraic dependence between u and x.
+
+### 4️ Algebraic Closure Properties
+
+The set of algebraic numbers is closed under:
++ , − , × , ÷ , and solving polynomial equations.
+
+Therefore:
+If a number can be expressed using only these operations
+from algebraic inputs, it remains algebraic.
+
+### 5️ Non-Closure Under Transcendental Functions
+
+Algebraic numbers are not closed under:
+exp(x), log(x), sin(x), cos(x)
+
+Key Result (Competition Form):
+If a ≠ 0 is algebraic, then e^a is transcendental
+(Lindemann–Weierstrass theorem).
+
+### 6️ Standard Competition Contradiction Pattern
+
+1. Assume a given expression x is algebraic.
+2. Construct a polynomial equation involving x.
+3. Deduce that e^(algebraic) must be algebraic.
+4. This contradicts transcendence results.
+5. Therefore, x is transcendental.
+
+### 7️ Representative Example
+
+Let:
+x = e^(sqrt(2)) + e^(-sqrt(2))
+
+Set:
+u = e^(sqrt(2))
+
+Then:
+x = u + 1/u
+u^2 - x u + 1 = 0
+
+If x were algebraic, then u would be algebraic.
+But sqrt(2) is a non-zero algebraic number, and e^(sqrt(2))
+is transcendental.
+
+This is a contradiction.
+Hence, x is transcendental.
