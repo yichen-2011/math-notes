@@ -1,0 +1,66 @@
+## Algebraic Independence and Multi-term Exponentials
+
+This section summarizes a core competition technique:
+using the Lindemann–Weierstrass theorem to determine
+transcendence of sums of exponentials with algebraic exponents.
+
+### 1️ Core Principle
+
+If n_a1, n_a2, ..., n_an are algebraic numbers that are linearly independent over Q,  
+then e^n_a1, e^n_a2, ..., e^n_an are algebraically independent.
+
+Therefore, to test whether a sum like
+x = e^n_a1 + e^n_a2 + e^n_a3 + ... + e^n_an
+is algebraic, the key question is:
+Do the exponents form a linearly independent set of algebraic numbers?
+
+### 2️ Basic Two-term Example
+
+Let:
+x = e^sqrt2 + e^-sqrt2
+
+Set:
+u = e^sqrt2
+
+Then:
+x = u + 1/u
+
+Construct the polynomial:
+u^2 - x u + 1 = 0
+
+Conclusion:
+If x were algebraic, then u would be algebraic.
+But n_a = sqrt2 is non-zero algebraic, so e^n_a is transcendental.
+Contradiction → x is transcendental.
+
+### 3️ Four-term Sum Example
+
+Let:
+x = e^sqrt2 + e^-sqrt2 + e^sqrt3 + e^-sqrt3
+
+Set:
+u = e^sqrt2, v = e^sqrt3
+
+Define:
+y = u + 1/u, z = v + 1/v
+
+Then:
+x = y + z
+
+Assume x is algebraic → y and z would also be algebraic.
+But e^n_a with n_a = sqrt2, sqrt3 are transcendental (linearly independent algebraic exponents).  
+Contradiction → x is transcendental.
+
+### 4️ General Pattern
+
+1. Assume a sum of exponentials x is algebraic.  
+2. Group terms as u + 1/u, v + 1/v, ...  
+3. Construct corresponding polynomials for each group.  
+4. Apply Lindemann–Weierstrass: e^n_a with non-zero algebraic n_a are transcendental.  
+5. Contradiction shows x is transcendental.
+
+### 5️ Key Takeaways
+
+- Any sum of e^n_a where n_a are linearly independent algebraic numbers is transcendental.  
+- Polynomial construction using u + 1/u (or higher powers) is the standard tool.  
+- This method generalizes to any finite sum of exponentials with distinct algebraic exponents.
