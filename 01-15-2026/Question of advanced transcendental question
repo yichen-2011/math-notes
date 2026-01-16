@@ -1,0 +1,24 @@
+### Question
+Let x=e^root2 + e^-root2 + e^root3 + e^-root3.
+Determine whether x is algebraic or transcendental, and prove your conclusion.
+
+### First thought
+Use Lindermann-Weierstrass rule!
+
+x=e^root2 + e^-root2 + e^root3 + e^-root3. 
+because root2 don't = to -root2 don't equal to root3 don't = -root3, also because of lindemann-weierstrass rule, the sum of these is not algebraic. 
+so x is not algebraic
+
+### FInal Anwser
+let y=e^root2+e^-root2, z=e^root3+e^-root3.       
+so x=y+z.       
+make x belongs to set Q.     
+so y,z belongs to set Q too.       
+let u=e^root2, v=e^root3, 
+so u+1/u,v+1/v belongs to set Q.
+->u,v belongs to set Q.            
+so e^root2 and e^root3 was linear independent.           
+use Lindemann-Weierstrass rule,      
+exponents +-root2 and +-root3 were linear independent        
+so 1/u +u+1/v+v is transcendental, which is opposite with the hypothesis.      
+so x is transcendental
