@@ -1,0 +1,123 @@
+# Transcendental Numbers — OR-Type Problems (Proof Template)
+
+## Problem Structure
+
+Typical statement:
+
+Let x be an algebraic number.
+
+Prove that at least one of the following numbers is transcendental:
+
+A(x)^(α), B(x)^(α)
+
+where:
+A(x), B(x) are algebraic expressions in x  
+α is an irrational algebraic number
+
+Such problems are called OR-type transcendence problems.
+
+## Fundamental Strategy
+
+The key idea is NOT to prove each expression is transcendental separately.
+
+Correct approach:
+
+Assume both expressions are algebraic.  
+Construct a new exponential expression from them.  
+Force an application of the Gelfond–Schneider theorem.  
+Derive a contradiction.
+
+## Standard Contradiction Template
+
+### Step 1: Contradiction Assumption
+
+Assume:
+
+A(x)^(α) and B(x)^(α) are both algebraic numbers.
+
+### Step 2: Construct a New Power
+
+Form a ratio or product:
+
+(A(x) / B(x))^(α)  
+or  
+(A(x) * B(x))^(α)
+
+Choose the form that simplifies the base.
+
+### Step 3: Analyze the Base
+
+Let:
+
+a = A(x) / B(x)  
+or  
+a = A(x) * B(x)
+
+Verify explicitly:
+
+a is algebraic  
+a ≠ 0  
+a ≠ 1
+
+This step is mandatory and cannot be skipped.
+
+### Step 4: Apply Gelfond–Schneider
+
+If:
+
+a is algebraic and a ≠ 0,1  
+α is an irrational algebraic number
+
+Then:
+
+a^(α) is transcendental.
+
+### Step 5: Contradiction
+
+Since a^(α) is constructed from algebraic numbers,  
+it must be algebraic under the assumption.
+
+This contradicts the Gelfond–Schneider theorem.
+
+### Step 6: Handle Exceptional Cases
+
+Explicitly check cases where Step 3 fails:
+
+a = 0  
+a = 1  
+expression undefined
+
+These cases usually reduce to simple direct applications of the theorem.
+
+## Common Logical Errors
+
+Do not:
+
+Claim both expressions are transcendental directly  
+Ignore the case a = 1  
+Apply Gelfond–Schneider without checking the base  
+Treat irrationality of the exponent as sufficient  
+Ignore domain issues such as negative bases
+
+## Minimal Checklist Before Using Gelfond–Schneider
+
+Is the base algebraic  
+Is the base different from 0 and 1  
+Is the exponent algebraic  
+Is the exponent irrational
+
+If any answer is no, stop and change strategy.
+
+## Typical Applications
+
+x^(α) vs (x + 1)^(α)  
+(x + 1)^(α) vs (x − 1)^(α)  
+x^(α) vs (x^2 + 1)^(α)  
+Algebraic functions sharing common zeros or ones
+
+## Key Insight
+
+In OR-type problems:
+
+The goal is not transcendence of each expression,  
+but impossibility of simultaneous algebraicity.
