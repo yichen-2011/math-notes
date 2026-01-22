@@ -1,0 +1,78 @@
+# Transcendental Numbers — Gelfond–Schneider Theorem
+
+## Theorem Statement
+
+Let a and b satisfy:
+
+- a is an algebraic number
+- a ≠ 0, 1
+- b is an irrational algebraic number
+
+Then:
+
+a^b is a transcendental number.
+
+This theorem provides a criterion for transcendence of algebraic powers with algebraic irrational exponents.
+
+---
+
+## Comparison with Lindemann–Weierstrass
+
+Lindemann–Weierstrass theorem concerns numbers of the form:
+
+e^α, where α ≠ 0 is algebraic
+
+Gelfond–Schneider theorem concerns numbers of the form:
+
+a^b, where:
+- a is algebraic (a ≠ 0,1)
+- b is algebraic but irrational
+
+Key difference:
+- Gelfond–Schneider does not rely on e
+- It establishes transcendence for algebraic bases raised to algebraic irrational powers
+
+---
+
+## Classical Examples
+
+### Example 1: 2^(sqrt(2))
+
+- a = 2 (algebraic, ≠ 0,1)
+- b = sqrt(2) (irrational algebraic)
+
+Conclusion:
+2^(sqrt(2)) is transcendental.
+
+This result cannot be obtained using Lindemann–Weierstrass alone.
+
+---
+
+### Example 2: (-1)^(sqrt(2))
+
+(-1)^(sqrt(2)) = e^(iπ sqrt(2))
+
+- a = -1 (algebraic, ≠ 0,1)
+- b = sqrt(2) (irrational algebraic)
+
+Conclusion:
+(-1)^(sqrt(2)) is transcendental.
+
+---
+
+## Competition Usage Template
+
+Typical proof strategy:
+
+1. Assume x is algebraic
+2. Rewrite x or a power of x in the form a^b
+3. Check:
+   - a is algebraic and a ≠ 0,1
+   - b is algebraic and irrational
+4. Apply Gelfond–Schneider theorem
+5. Contradiction → x is transcendental
+
+---
+
+## Scope
+Gelfond–Schneider theorem is one of the few transcendence results directly usable in Olympiad-level problems.
