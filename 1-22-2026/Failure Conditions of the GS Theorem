@@ -1,0 +1,105 @@
+# Transcendental Numbers — Failure Conditions of the Gelfond–Schneider Theorem
+
+## Necessary Conditions Review
+
+The Gelfond–Schneider theorem requires all of the following:
+
+1. a is algebraic
+2. a ≠ 0, 1
+3. b is an irrational algebraic number
+
+If any condition fails, the conclusion does not hold.
+
+---
+
+## Case 1: a = 1
+
+If a = 1, then:
+
+1^b = 1 for all b
+
+- 1 is algebraic
+- 1^b is always algebraic
+
+Allowing a = 1 would immediately produce counterexamples.
+
+Essential reason:
+The exponential structure collapses when the base is 1.
+
+---
+
+## Case 2: a = 0
+
+- If b > 0, then 0^b = 0 (algebraic)
+- If b < 0, then 0^b is undefined
+- If b = 0, then 0^0 is undefined
+
+Conclusion:
+a = 0 is excluded due to degeneracy or undefined behavior.
+
+---
+
+## Case 3: b is Rational
+
+Let b = p/q in lowest terms, with q > 0.
+
+Then:
+
+a^b = a^(p/q)  
+(a^b)^q = a^p
+
+If a is algebraic:
+- a^p is algebraic
+- a^b satisfies x^q - a^p = 0
+
+Therefore:
+a^b is algebraic.
+
+Conclusion:
+If b is rational, a^b can never be transcendental by Gelfond–Schneider.
+
+---
+
+## Common Trap Example
+
+Let:
+
+a = 2  
+b = log_2 3  
+
+Then:
+
+a^b = 3 (algebraic)
+
+Note:
+b = ln(3) / ln(2)
+
+The algebraic nature of b is unknown (and believed to be transcendental).
+
+Therefore:
+Gelfond–Schneider theorem cannot be applied.
+
+---
+
+## Comparison with Lindemann–Weierstrass Boundaries
+
+- Lindemann–Weierstrass fails when the exponent is 0 or linearly dependent
+- Gelfond–Schneider fails when:
+  - a = 0 or 1
+  - b is rational
+  - b is not algebraic
+
+The failure regions of the two theorems are fundamentally different.
+
+---
+
+## Pre-Application Checklist (Competition Use)
+
+Before applying Gelfond–Schneider, verify:
+
+- a is algebraic
+- a ≠ 0, 1
+- b is algebraic
+- b is irrational
+
+If any check fails, the theorem cannot be used.
