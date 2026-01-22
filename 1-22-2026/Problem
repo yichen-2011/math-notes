@@ -1,0 +1,78 @@
+# Problem
+
+## Question
+
+Let x be a nonzero algebraic number.
+Prove that at least one of the following numbers is transcendental:
+x^(sqrt(2)) , (x + 1)^(sqrt(2))
+
+## First Thought
+
+Things can get from the question: 
+the exponent of the two numbers were irrational algebraic numbers; 
+bases were algebraic; two failure situation: x+1=0, x=1. 
+
+###Emphasis: both were algebraic. 
+
+###SOLVE: 
+
+####situation1: x /=+- 1. 
+
+so the base could pass the GS Theorem. 
+BY using the GS theorem, both were transcendental. 
+
+####situation2: x=1. 
+
+So x+1=2, so it equals to 1^sprt2, 2^sqrt2. 
+Applying the GS theorem, the first isn't, but the second must be. 
+
+####Situation3: x=-1. 
+SO x+1=0. 
+APply GS theorem, the first is -1^sqrt2, second is 0^sqrt2. 
+the second can't be, but the first one must. 
+
+###Conclusion: at least one is transcendental. Proofed.
+
+## FINAL Answer
+
+###Proof.
+
+Assume, for contradiction, that both
+x^(sqrt(2)) and (x+1)^(sqrt(2))
+are algebraic numbers.
+
+###Step 1: Construct a new exponential
+
+Consider the ratio:
+
+(x^(sqrt(2))) / ((x+1)^(sqrt(2)))
+= (x / (x+1))^(sqrt(2))
+
+###Step 2: Analyze the base
+
+Since x is algebraic and x ≠ 0, -1,
+a = x / (x+1) is algebraic
+
+a ≠ 0, 1 (check directly)
+
+The exponent sqrt(2) is an irrational algebraic number.
+
+Step 3: Apply Gelfond–Schneider
+
+By the Gelfond–Schneider theorem:
+
+(x / (x+1))^(sqrt(2)) is transcendental.
+
+But this contradicts the assumption that the ratio of two algebraic numbers is algebraic.
+
+###Step 4: Handle exceptional cases
+
+If x = 1, then (x+1)^(sqrt(2)) = 2^(sqrt(2)) is transcendental
+
+If x = -1, then (-1)^(sqrt(2)) = e^(iπ sqrt(2)) is transcendental
+
+###Conclusion
+
+At least one of
+x^(sqrt(2)) , (x+1)^(sqrt(2))
+is transcendental.
