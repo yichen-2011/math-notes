@@ -1,0 +1,87 @@
+###1. Motivation
+Previously, transcendence problems mainly relied on the Gelfond–Schneider theorem, especially for expressions of the form a^α.
+However, many competition problems involve expressions like:
+-e^x, e^(2x), e^(3x)
+or
+-e^a, e^b
+where a, b, x are algebraic numbers.
+
+In these cases:
+
+-The base is fixed as e
+-Gelfond–Schneider cannot be applied
+-OR-type arguments based on ratios often fail
+-This motivates the use of Lindemann–Weierstrass.
+
+###2. Lindemann–Weierstrass Theorem (Usable Form)
+
+-Let α1, α2, ..., αn be:
+-nonzero algebraic numbers
+-pairwise distinct
+
+Then:
+-e^(α1), e^(α2), ..., e^(αn)
+-are linearly independent over the field of algebraic numbers.
+
+##Equivalently:
+-For any algebraic numbers c1, c2, ..., cn, not all zero,
+c1 e^(α1) + c2 e^(α2) + ... + cn e^(αn) ≠ 0
+
+###3. OR-Type Problems Using Lindemann–Weierstrass
+
+##Goal:
+-Prove that at least one number in a set is transcendental.
+
+General template:
+
+#Step 1
+-Assume all numbers e^(a1), e^(a2), ..., e^(ak) are algebraic.
+
+#Step 2
+-Construct a linear combination:
+-c1 e^(a1) + c2 e^(a2) + ... + ck e^(ak)
+
+-where ci are algebraic numbers (often integers or 1).
+
+#Step 3
+-Verify the key condition:
+-a1, a2, ..., ak are distinct algebraic numbers.
+
+#Step 4
+-Apply Lindemann–Weierstrass:
+-The linear combination cannot be zero.
+
+#Step 5
+-Contradiction, hence at least one of the original numbers is transcendental.
+
+###4. Comparison with Gelfond–Schneider
+
+##Gelfond–Schneider:
+
+Structure: a^α
+-Base a is algebraic, a ≠ 0,1
+-Exponent α is algebraic irrational
+
+Conclusion: a^α is transcendental
+
+##Lindemann–Weierstrass:
+
+Structure: e^(αi)
+
+-Base fixed as e
+-Exponents are algebraic and distinct
+
+Conclusion: linear independence over algebraic numbers
+
+Key distinction:
+-GS checks the base
+-LW checks the exponents
+
+###5. Common Pitfalls
+
+-Treating e^x as a^α and applying GS
+-Forgetting that LW requires distinct exponents
+-Assuming LW implies each term is transcendental (it implies linear independence)
+-Avoiding linear combinations instead of constructing them
+-Avoiding linear combinations instead of constructing them
+IMO Shortlist transcendence selection problems
