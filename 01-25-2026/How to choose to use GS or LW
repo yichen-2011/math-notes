@@ -1,0 +1,81 @@
+###1. Core Idea
+
+-In transcendence problems involving exponentials, the first step is not computation but classification.
+-The choice between Gelfond–Schneider and Lindemann–Weierstrass depends on the relations among exponents, not on the apparent complexity of the expression.
+
+###2. Three Fundamental Cases
+##Case 1: Single Power
+
+-Form:
+a^α
+
+-Conditions:
+-a is algebraic, a ≠ 0,1
+-α is an irrational algebraic number
+
+-Tool:
+-Gelfond–Schneider
+
+#Conclusion:
+-a^α is transcendental
+
+##Case 2: Multiple Exponentials with Independent Exponents
+
+-Form:
+e^(α1), e^(α2), ..., e^(αn)
+
+-Conditions:
+-αi are algebraic numbers
+-αi are pairwise distinct
+-no rational linear relation among αi
+
+Tool:
+-Lindemann–Weierstrass
+
+#Conclusion:
+-e^(α1), ..., e^(αn) are linearly independent over algebraic numbers
+-In OR-type problems, at least one must be transcendental
+
+##Case 3: Related Exponents (Danger Zone)
+
+-Form:
+-e^a + e^b
+-e^(a+b)
+-e^a, e^(2a)
+
+-Features:
+-Exponents are algebraically or rationally related
+-Lindemann–Weierstrass cannot be applied directly
+
+-Method:
+-Assume algebraicity
+-Construct auxiliary expressions
+-Derive contradictions in exponent relations
+
+###3. Key Distinction Between Theorems
+
+Gelfond–Schneider:
+-Checks the base
+
+Lindemann–Weierstrass:
+-Checks the exponents
+
+##Misidentifying this distinction leads to invalid proofs.
+
+###4. Common Mistakes
+
+-Applying GS to expressions of the form e^x
+-Applying LW when exponents are proportional
+-Assuming linear independence implies each term is transcendental
+-Skipping exponent relation analysis
+
+###5. Practical Checklist
+
+Before choosing a theorem, verify:
+
+-Are all exponents algebraic?
+-Are they distinct?
+-Are they Q-linearly independent?
+-Is the problem linear (sum/OR-type) or nonlinear?
+
+If any answer is unclear, stop and analyze exponent relations first.
