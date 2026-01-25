@@ -1,0 +1,97 @@
+###1. Motivation
+
+After mastering OR-type transcendence problems using Lindemann–Weierstrass, a new difficulty appears.
+
+Many competition problems no longer ask whether at least one number is transcendental, but instead involve expressions such as:
+
+-e^a + e^b
+-e^a, e^(a+b)
+-e^a + e^(2a)
+
+where a, b are algebraic numbers.
+
+##In these cases:
+
+-The base is still fixed as e
+-Lindemann–Weierstrass may not apply directly
+-The exponents may be algebraically related
+-Linear OR-type arguments can fail
+-This forces an analysis of relations among exponents
+
+###2. Core Idea: Exponent Relations Matter
+
+Lindemann–Weierstrass does not depend on the size of exponents, but on their relations.
+
+If:
+-α1, α2, ..., αn are algebraic numbers
+-and are linearly independent over Q
+
+Then:
+-e^(α1), e^(α2), ..., e^(αn)
+-are linearly independent over the algebraic numbers
+
+Conversely (competition usage):
+
+-If a nontrivial algebraic linear relation exists among e^(αi)
+-Then the exponents αi must satisfy a rational linear relation
+
+###3. When Lindemann–Weierstrass is Safe
+
+LW can be applied directly if:
+
+-All exponents are algebraic
+-All exponents are pairwise distinct
+-No rational linear relation exists among the exponents
+-The problem concerns linear combinations or OR-type statements
+
+Typical safe examples:
+
+-e^x, e^(2x), e^(3x) with x ≠ 0
+-e^a, e^b with a/b irrational
+
+###4. Dangerous Situations (Must Stop and Check)
+
+LW cannot be applied blindly if:
+
+-The exponents are proportional (a = qb)
+-The exponents differ by an algebraic shift (a+b)
+-The expression involves sums like e^a + e^b
+-The problem asks whether a sum or product is algebraic
+
+These situations require exponent relation analysis before choosing a theorem.
+
+###5. Typical Advanced Problem Types
+
+Type A: Algebraic sum
+-Decide whether e^a + e^b can be algebraic
+
+Type B: Related exponents
+-Analyze e^a, e^(2a), e^(3a) beyond OR-type reasoning
+
+Type C: Choice of theorem
+-Determine whether GS, LW, or neither applies
+
+###6. Key Mental Checklist
+
+Before applying Lindemann–Weierstrass, ask:
+
+-Are the exponents algebraic?
+-Are they distinct?
+-Are they linearly independent over Q?
+-Is the conclusion about linear relations, not individual transcendence?
+
+If any answer is unclear, pause and analyze exponent relations first.
+
+###7. Position in the Learning Path
+
+Completed:
+-Gelfond–Schneider OR-type arguments
+-Lindemann–Weierstrass OR-type arguments
+
+Current focus:
+-Exponent relation analysis
+-Linear independence vs algebraic relations
+
+Next stage:
+-GS and LW mixed selection problems
+-IMO Shortlist transcendence classification problems
