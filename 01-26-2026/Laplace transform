@@ -81,3 +81,12 @@ sin(at) → a/(s^2 + a^2)
 cos(at) → s/(s^2 + a^2)
 sinh(at) → a/(s^2 − a^2)
 cosh(at) → s/(s^2 − a^2)
+
+###9.Quality
+
+for sin(wt) and cos(wt), denominator:s^2+a^2,
+so the solution for denominator=0 is only in unreal number domain.
+so the Laplace transform of sin(wt) and cos(wt) shows that they were always stable.
+
+for sinh(wt) and cosh(wt), there were two poles：s=+-a.
+when it were at these poles, the function is unstable.
