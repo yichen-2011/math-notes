@@ -1,0 +1,83 @@
+###1.Definition
+
+The Laplace transform of a function f(t), defined for t ≥ 0, is
+L{f(t)} = ∫₀^∞ e^(−st) f(t) dt
+where s is a real or complex parameter with sufficiently large real part
+
+###2. Basic Properties
+
+##Linearity:
+L{a f(t) + b g(t)} = a L{f(t)} + b L{g(t)}
+
+##Shift in s:
+L{e^(at) f(t)} = F(s − a)
+
+##Differentiation in time:
+L{f'(t)} = sF(s) − f(0)
+
+##Integration in time:
+L{∫₀^t f(τ)dτ} = F(s)/s
+
+###3. Laplace Transform of e^(at)
+
+##Compute directly:
+
+L{e^(at)} = ∫₀^∞ e^(−st) e^(at) dt
+= ∫₀^∞ e^{−(s−a)t} dt
+= 1/(s − a), Re(s) > a
+
+###4. Laplace Transform of sin(at)
+
+Start from the definition:
+
+L{sin(at)} = ∫₀^∞ e^(−st) sin(at) dt
+
+Use integration by parts twice or complex exponentials.
+
+Using complex form:
+sin(at) = (e^(iat) − e^(−iat))/(2i)
+
+Then:
+
+L{sin(at)}
+= (1/2i)[1/(s − ia) − 1/(s + ia)]
+= a/(s^2 + a^2)
+
+###5. Laplace Transform of cos(at)
+
+Using complex exponentials:
+cos(at) = (e^(iat) + e^(−iat))/2
+
+Then:
+
+L{cos(at)}
+= (1/2)[1/(s − ia) + 1/(s + ia)]
+= s/(s^2 + a^2)
+
+###6. Laplace Transform of sinh(at)
+
+Definition:
+sinh(at) = (e^(at) − e^(−at))/2
+
+Then:
+
+L{sinh(at)}
+= (1/2)[1/(s − a) − 1/(s + a)]
+= a/(s^2 − a^2)
+
+###7. Laplace Transform of cosh(at)
+
+Definition:
+cosh(at) = (e^(at) + e^(−at))/2
+
+Then:
+
+L{cosh(at)}
+= (1/2)[1/(s − a) + 1/(s + a)]
+= s/(s^2 − a^2)
+
+###8.Conclusion
+sin(at) → a/(s^2 + a^2)
+cos(at) → s/(s^2 + a^2)
+sinh(at) → a/(s^2 − a^2)
+cosh(at) → s/(s^2 − a^2)
