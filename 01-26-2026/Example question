@@ -1,0 +1,62 @@
+### Question: 
+
+Calculate:y" + 3y' + 2y = e^(-t)
+for y(0)=0,y'(0)=1
+
+### Solving
+
+## Step1:
+
+Use Laplace transform,
+so s^2 Y(s) + 3s Y(s) + 2 Y(s) = 1/(s+1) +1
+
+## Step2:
+
+Combine the functions, get:
+(s+2)(s+1)Y(s) = (s+2)/(s+1)
+
+## Step3:
+
+move the formula.
+Y(s) = 1/(s+1)^2
+
+## Step4:
+
+Use inverse Laplace.
+y(t)= t^n e^-at = L^(-1){Y(s)}=n!/(s+a)^(n+1)=1!/(s+1)^(1+1)
+
+so, n=1, a=1.
+so y(t) = t e^(-t)
+
+### Answer: te^(-t)
+
+### More COnclusions:
+
+y'(t)=e^(-t) (1-t),
+where e^(-t) never equals 0,
+so the only critical point is at t=1(t>0),
+
+next, find the second dev.:
+y"(t)=e^(-t) (t-2)
+where e^(-t) always is bigger than 0, so the sign of the function is only determined by t-2.
+t-2 is -1 which is a negative num. when t=1.
+so y(1) is a local max( y(t) is always increasing for domain (0,1), and monotonically decreasing on domain (1,infinity).
+so y(1) is a absolute max for y(t). this means that the whole function has a max of y(1), which is 1/e.
+
+### Physical interpretation:
+
+#1.
+This system has a pole at s=-1.
+
+#2. 
+there were 3 stages of the motion:
+（1）:0<t<1
+y'(t)>0, y(t) is increasing quickly.
+
+(2):t=1
+y'(t)=0, the motion reaches its max displacement:1/e
+
+(3):t>1
+y'(t)<0, the displacement sharply decays, and tend to a constant:0. 
+
+##Conclusion: since lim_(t->infinite)(y(t))=0. This shows the system's stable, it gets a shock, then get back to 0.
